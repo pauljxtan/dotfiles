@@ -8,7 +8,7 @@ export VISUAL=nvim
 # Path
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.cargo/bin
-export PATH=$PATH:/home/paultan/src/node-v12.18.1-linux-x64/bin
+export PATH=$PATH:$HOME/src/node-v12.18.1-linux-x64/bin
 export PATH=$PATH:~/.local/bin
 
 export GTK_IM_MODULE=fcitx
