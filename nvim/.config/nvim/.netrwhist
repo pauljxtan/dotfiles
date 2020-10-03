@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/paultan/projects/misc/dotfiles_public/nvim/.config/nvim/ftdetect'
+let g:netrw_dirhist_7='/home/paultan/projects/misc/dotfiles_public/nvim/.config/nvim'
+let g:netrw_dirhist_6='/home/paultan/projects/misc/dotfiles_public/nvim/.config'
+let g:netrw_dirhist_5='/home/paultan/projects/misc/dotfiles_public/nvim'
+let g:netrw_dirhist_4='/home/paultan/dotfiles/ssh/.ssh'
+let g:netrw_dirhist_3='/home/paultan/dotfiles/ncmpcpp/.ncmpcpp'
+let g:netrw_dirhist_2='/home/paultan/dotfiles/mpv/.config/mpv'
+let g:netrw_dirhist_1='/home/paultan/dotfiles/mpv/.config'
+let g:netrw_dirhist_0='/home/paultan/projects/foss/vgmdb/docker'
+let g:netrw_dirhist_9='/home/paultan/scratch'

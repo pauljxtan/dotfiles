@@ -1,0 +1,60 @@
+{
+    "position": "top",
+
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["mpd"],
+    "modules-right": ["network", "disk", "disk#home", "cpu", "memory", "clock", "tray"],
+
+    "mpd": {
+        "max-length": 100,
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{title} | {album}",
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        }
+    },
+    "tray": {
+        "spacing": 5
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d %H:%M}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "network": {
+        "interval": 5,
+        "format": "[{ifname}] {bandwidthUpBits}  {bandwidthDownBits} ",
+        "format-disconnected": "(disconnected) ⚠"
+    },
+    "disk": {
+        "interval": 30,
+        "format": "{path} {percentage_free}%",
+        "path": "/"
+    },
+    "disk#home": {
+        "interval": 30,
+        "format": "{path} {percentage_free}%",
+        "path": "/home"
+    }
+}
+
+// vim: set ft=json:

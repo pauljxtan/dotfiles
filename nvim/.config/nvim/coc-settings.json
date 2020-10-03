@@ -1,0 +1,46 @@
+{
+    "coc.preferences.rootPatterns": ["Dockerfile", ".git"],
+    "python.jediEnabled": false,
+    "python.linting.enabled": true,
+    "rust.show_warnings": true,
+    "codeLens.enable": true,
+    "html.filetypes": ["html", "handlebars", "htmldjango", "eelixir", "jinja"],
+    "languageserver": {
+        "haskell": {
+            "command": "haskell-language-server-wrapper",
+            "args": ["--lsp"],
+            "rootPatterns": [
+                "*.cabal",
+                "stack.yaml",
+                "cabal.project",
+                "package.yaml"
+            ],
+            "filetypes": ["hs", "lhs", "haskell"],
+            "initializationOptions": {
+                "languageServerHaskell": {}
+            }
+        },
+        "elixirLS": {
+            "command": "/home/paultan/src/elixir-ls-0.4.0_precompiled/language_server.sh",
+            "filetypes": ["elixir", "eelixir"]
+        },
+        "elmLS": {
+            "command": "elm-language-server",
+            "filetypes": ["elm"],
+            "rootPatterns": ["elm.json"],
+            "initializationOptions": {
+                "elmAnalyseTrigger": "change"
+            }
+        },
+        "purescript": {
+            "command": "purescript-language-server",
+            "args": ["--stdio", "--config {}"],
+            "filetypes": ["purescript"],
+            "rootPatterns": ["bower.json", "psc-package.json", "spago.dhall"]
+        },
+        "dhall": {
+            "command": "dhall-lsp-server",
+            "filetypes": ["dhall"]
+        }
+    }
+}

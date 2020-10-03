@@ -1,0 +1,12 @@
+[submodule "zsh/.zsh/external/pure"]
+	path = zsh/.zsh/external/pure
+	url = git@github.com:pauljxtan/pure
+[submodule "zsh/.zsh/external/zsh-syntax-highlighting"]
+	path = zsh/.zsh/external/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh/.zsh/external/zsh-history-substring-search"]
+	path = zsh/.zsh/external/zsh-history-substring-search
+	url = git@github.com:zsh-users/zsh-history-substring-search.git
+[submodule "zsh/.zsh/external/z"]
+	path = zsh/.zsh/external/z
+	url = git@github.com:rupa/z.git
