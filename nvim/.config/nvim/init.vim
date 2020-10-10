@@ -40,7 +40,9 @@ Plug 'lervag/vimtex'
 
 "-- Application-specific
 " Neuron
-Plug 'ihsanturk/neuron.vim'
+"Plug 'ihsanturk/neuron.vim'
+" Actively maintained fork
+Plug 'fiatjaf/neuron.vim'
 
 "-- Colorschemes
 " TODO I no longer use most of these - clean this up
