@@ -8,9 +8,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 "-- General
 Plug 'Chiel92/vim-autoformat'
 Plug 'itchyny/lightline.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'mhinz/vim-startify'
 Plug 'psliwka/vim-smoothie'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/vis'
@@ -210,6 +210,22 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+" Show docs in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+" CocList shortcuts
+nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 
 "-- vim-isort
 " Adjust to match whatever length the code formatter uses
@@ -315,9 +331,6 @@ let g:lightline.component_function = {
 set noshowmode
 " Force lightline updates for coc
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
-
-"-- vim-startify
-let g:startify_change_to_dir = 0
 
 "---- Functions --------------------------------------------------------
 
