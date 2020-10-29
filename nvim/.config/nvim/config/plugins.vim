@@ -5,6 +5,8 @@
 " Use the default mappings
 let g:neuron_no_mappings = 0
 
+let g:neuron_dir = $HOME.'/zettelkasten/'
+
 """" gitgutter
 
 let g:gitgutter_highlight_linenrs = 1
