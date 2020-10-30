@@ -45,6 +45,9 @@ Plug 'kovisoft/slimv'
 " Haskell
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
+" Jinja
+Plug 'lepture/vim-jinja'
+
 " Markdown
 Plug 'masukomi/vim-markdown-folding'
 
