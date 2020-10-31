@@ -1,5 +1,5 @@
 #######################################
-# Mounts a labelled partition if it is
+# Mount a labelled partition if it is
 # connected and not already mounted.
 #
 # Args:
@@ -27,12 +27,30 @@ function try_mount() {
 }
 
 #######################################
-# Changes into a random directory at
-# the given path (non-recursive).
+# Change into a random directory at the
+# given path (non-recursive).
 #
 # Args:
 #     The base path
 #######################################
 function cd_random_subdir() {
     cd $(ls -d $1/* | shuf | head -n 1)
+}
+
+#######################################
+# Search the command history via fzf
+# and push the selection onto the
+# editing buffer stack.
+#
+# Taken directly from:
+# https://github.com/junegunn/fzf/wiki/
+#        Examples#command-history
+#######################################
+fh() {
+    print -z $( \
+        ([ -n "$ZSH_NAME" ] && fc -l 1 || history) \
+        | fzf +s --tac \
+        | sed -E 's/ *[0-9]*\*? *//' \
+        | sed -E 's/\\/\\\\/g' \
+    )
 }
