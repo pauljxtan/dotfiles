@@ -25,8 +25,8 @@ export XMODIFIERS=@im=fcitx
 # Make Java GUIs look less ugly
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 
-# Respect .gitignore
-export FZF_DEFAULT_COMMAND="fd --type f"
+# Show hidden files to enable jumping to dotfiles and the like
+export FZF_DEFAULT_COMMAND="fd --type f --hidden"
 
 # Qt5 theming
 #export QT_QPA_PLATFORMTHEME=qt5ct

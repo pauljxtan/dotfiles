@@ -3,7 +3,6 @@ ZSH_EXTERNAL=$ZSH_BASE/external
 
 fpath+=$ZSH_EXTERNAL/pure
 fpath+=$ZSH_EXTERNAL/lean
-fpath+=$ZSH_BASE/funcs
 
 source $ZSH_BASE/settings.zsh
 source $ZSH_BASE/prompt.zsh
@@ -11,6 +10,8 @@ source $ZSH_BASE/completion.zsh
 source $ZSH_BASE/funcs.zsh
 source $ZSH_BASE/aliases.zsh
 source $ZSH_BASE/aliases_special.zsh
+
+#### External plugins
 
 source $ZSH_EXTERNAL/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
