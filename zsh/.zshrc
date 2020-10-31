@@ -5,13 +5,10 @@ fpath+=$ZSH_EXTERNAL/pure
 fpath+=$ZSH_EXTERNAL/lean
 fpath+=$ZSH_BASE/funcs
 
-# TODO put these autoloads somewhere else
-autoload -Uz cd_random_subdir
-autoload -Uz try_mount
-
 source $ZSH_BASE/settings.zsh
 source $ZSH_BASE/prompt.zsh
 source $ZSH_BASE/completion.zsh
+source $ZSH_BASE/funcs.zsh
 source $ZSH_BASE/aliases.zsh
 source $ZSH_BASE/aliases_special.zsh
 

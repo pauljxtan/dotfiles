@@ -7,7 +7,7 @@
 #     The mount path (if not given,
 #         checks /etc/fstab)
 #######################################
-function try_mount {
+function try_mount() {
     local LABEL=$1
     local MOUNT_PATH=$2
 
@@ -24,4 +24,15 @@ function try_mount {
     else
         echo "$LABEL is not connected"
     fi
+}
+
+#######################################
+# Changes into a random directory at
+# the given path (non-recursive).
+#
+# Args:
+#     The base path
+#######################################
+function cd_random_subdir() {
+    cd $(ls -d $1/* | shuf | head -n 1)
 }
