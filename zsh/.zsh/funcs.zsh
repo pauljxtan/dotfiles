@@ -46,11 +46,24 @@ function cd_random_subdir() {
 # https://github.com/junegunn/fzf/wiki/
 #        Examples#command-history
 #######################################
-fh() {
+function fh() {
     print -z $( \
         ([ -n "$ZSH_NAME" ] && fc -l 1 || history) \
         | fzf +s --tac \
         | sed -E 's/ *[0-9]*\*? *//' \
         | sed -E 's/\\/\\\\/g' \
     )
+}
+
+#######################################
+# Change into a subdirectory via fzf.
+# Includes hidden directories.
+#
+# Based on:
+# https://github.com/junegunn/fzf/wiki/
+#         Examples#changing-directory
+#######################################
+function fcd() {
+    local DIR
+    DIR=$(fd --type d --hidden | fzf +m) && cd $DIR
 }
