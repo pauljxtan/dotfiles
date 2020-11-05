@@ -62,15 +62,13 @@ Plug 'lervag/vimtex'
 "" Neuron
 " NOTE the original plugin is at 'ihsanturk/neuron.vim'
 " This is a more actively maintained fork
-Plug 'fiatjaf/neuron.vim'
+"Plug 'fiatjaf/neuron.vim'
+Plug 'pauljxtan/neuron.vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'rhysd/git-messenger.vim'
 Plug 'tpope/vim-fugitive'
-
-" Various code formatters
-Plug 'Chiel92/vim-autoformat'
 
 """" Colorschemes
 

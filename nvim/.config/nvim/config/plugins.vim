@@ -5,7 +5,7 @@
 " Use the default mappings
 let g:neuron_no_mappings = 0
 
-let g:neuron_dir = $HOME.'/zettelkasten/'
+let g:neuron_dir = resolve($HOME.'/zettelkasten/')
 
 """" gitgutter
 
@@ -53,39 +53,6 @@ nnoremap <silent><nowait> <space>a :<C-u>CocList diagnostics<cr>
 nnoremap <silent><nowait> <space>e :<C-u>CocList extensions<cr>
 nnoremap <silent><nowait> <space>c :<C-u>CocList commands<cr>
 nnoremap <silent><nowait> <space>o :<C-u>CocList outline<cr>
-
-"""" vim-autoformat
-
-nnoremap <F3> :Autoformat<CR>
-
-" TODO My current preferred workflow leans more towards running these commands
-" externally. These settings are left for reference for now, but should be
-" cleaned out at some point.
-
-" Custom definitions
-let g:formatdef_brittany = '"brittany"'
-let g:formatdef_elmformat = '"elm-format --stdin --elm-version 0.19 --yes" '
-let g:formatdef_eslint = '"eslint --stdin" '
-let g:formatdef_hindent = '"hindent"'
-let g:formatdef_prettier_css = '"prettier" '
-let g:formatdef_prettier_html = '"prettier" '
-let g:formatdef_prettier_javascript = '"prettier" '
-let g:formatdef_prettier_json = '"prettier" '
-let g:formatdef_prettier_markdown = '"prettier --parser markdown --print-width 79 --prose-wrap always" '
-let g:formatdef_purty = '"purty format --write -" '
-let g:formatdef_standardjs = '"standard --fix" '
-
-" Filetype commands
-let g:formatters_eelixir = ['prettier_html']
-let g:formatters_elm = ['elmformat']
-let g:formatters_haskell = ['hindent', 'brittany', 'stylish-haskell']
-let g:formatters_javascript = ['prettier_javascript']
-let g:formatters_jinja = ['prettier_html']
-let g:formatters_json = ['prettier_json']
-let g:formatters_markdown = ['prettier_markdown']
-let g:formatters_purescript = ['purty']
-let g:formatters_python = ['yapf']
-let g:formatters_vue = ['prettier_javascript']
 
 """" vimtex
 
