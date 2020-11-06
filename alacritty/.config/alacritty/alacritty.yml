@@ -61,7 +61,7 @@ colors:
 bell:
   duration: 0
 
-background_opacity: 0.9
+background_opacity: 0.85
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
@@ -81,3 +81,6 @@ key_bindings:
   - { key: Key0,     mods: Control, action: ResetFontSize    }
   - { key: Equals,   mods: Control, action: IncreaseFontSize }
   - { key: Subtract, mods: Control, action: DecreaseFontSize }
+
+  - { key: J, mods: Control|Shift, action: ScrollLineDown }
+  - { key: K, mods: Control|Shift, action: ScrollLineUp   }
