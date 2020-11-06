@@ -82,5 +82,5 @@ key_bindings:
   - { key: Equals,   mods: Control, action: IncreaseFontSize }
   - { key: Subtract, mods: Control, action: DecreaseFontSize }
 
-  - { key: J, mods: Control|Shift, action: ScrollLineDown }
-  - { key: K, mods: Control|Shift, action: ScrollLineUp   }
+  - { key: J, mods: Control|Shift, action: ScrollPageDown }
+  - { key: K, mods: Control|Shift, action: ScrollPageUp   }
