@@ -139,6 +139,7 @@ bar {
 gaps inner 20
 
 include /etc/sway/config.d/*
+include config.local
 
 # NOTE redshift(-gtk) does not work in Wayland (as of July 2020)
 # Start it here if/when it is supported
