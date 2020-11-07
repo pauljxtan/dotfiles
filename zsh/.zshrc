@@ -9,7 +9,7 @@ source $ZSH_BASE/prompt.zsh
 source $ZSH_BASE/completion.zsh
 source $ZSH_BASE/funcs.zsh
 source $ZSH_BASE/aliases.zsh
-source $ZSH_BASE/aliases_special.zsh
+source $ZSH_BASE/aliases_local.zsh
 
 #### External plugins
 
