@@ -2,6 +2,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias python=python3
+
 alias ls='exa --colour-scale'
 alias ncdu='ncdu --color dark -rr'
 
