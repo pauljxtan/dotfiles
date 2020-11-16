@@ -51,9 +51,6 @@ Plug 'lepture/vim-jinja'
 " Markdown
 Plug 'masukomi/vim-markdown-folding'
 
-" Python
-Plug 'fisadev/vim-isort'
-
 " TeX
 Plug 'lervag/vimtex'
 

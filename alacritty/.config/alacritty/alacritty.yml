@@ -15,15 +15,15 @@ scrolling:
 
 font:
   normal:
-    family: Iosevka Fixed
+    family: Monaco
     style: Regular
   bold:
-    family: Iosevka Fixed
+    family: Monaco
     style: Bold
   italic:
-    family: Iosevka Fixed
+    family: Monaco
     style: Italic
-  size: 11
+  size: 12
   offset:
     x: 0
     y: 0
@@ -61,7 +61,7 @@ colors:
 bell:
   duration: 0
 
-background_opacity: 0.85
+background_opacity: 1.0
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
