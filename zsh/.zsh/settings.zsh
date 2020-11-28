@@ -1,5 +1,5 @@
 HISTFILE=$HOME/.zsh_history
-HISTSIZE=10000
+HISTSIZE=100000
 SAVEHIST=$HISTSIZE
 # See `man zshoptions` for details
 setopt extended_history
