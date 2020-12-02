@@ -14,13 +14,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Filesystem
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Navigation
 Plug 'psliwka/vim-smoothie'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
-Plug 'junegunn/fzf.vim'
 
 " Text
 Plug 'junegunn/vim-easy-align'
