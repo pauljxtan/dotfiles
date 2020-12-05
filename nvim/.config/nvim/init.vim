@@ -39,8 +39,9 @@ Plug 'sheerun/vim-polyglot'
 
 "" And some stuff not included in vim-polyglot 
 
-" Common Lisp
-Plug 'kovisoft/slimv'
+" Lisps
+Plug 'vlime/vlime', {'rtp': 'vim/'}
+Plug 'kovisoft/paredit'
 
 " Haskell
 Plug 'pbrisbin/vim-syntax-shakespeare'
@@ -63,6 +64,7 @@ Plug 'lervag/vimtex'
 " NOTE the original plugin is at 'ihsanturk/neuron.vim'
 " This is a more actively maintained fork
 "Plug 'fiatjaf/neuron.vim'
+" Personal fork with bugfixes
 Plug 'pauljxtan/neuron.vim'
 
 " Git
