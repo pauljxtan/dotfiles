@@ -41,6 +41,15 @@
         "dhall": {
             "command": "dhall-lsp-server",
             "filetypes": ["dhall"]
+        },
+        "clojure-lsp": {
+            "command": "bash",
+            "args": ["-c", "clojure-lsp"],
+            "filetypes": ["clojure"],
+            "rootPatterns": ["project.clj"],
+            "additionalSchemes": ["jar", "zipfile"],
+            "trace.server": "verbose",
+            "initializationOptions": {}
         }
     }
 }
