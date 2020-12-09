@@ -17,5 +17,14 @@ noremap <Right> <NOP>
 noremap <PageUp> <NOP>
 noremap <PageDown> <NOP>
 
-" Used on most of my personal projects
-noremap <F3> :!make fmt<cr>:e<cr>
+" Run `make fmt` if available, otherwise just fix indentation
+function Fmt()
+    !make fmt
+    if v:shell_error
+        normal gg=G
+    else
+        edit
+    endif
+endfunction
+
+noremap <F3> :call Fmt()<cr>
