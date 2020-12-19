@@ -145,3 +145,9 @@ let g:lightline.component_function = {
 
 " Force lightline updates for coc
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+
+"""" rainbow_parentheses
+augroup rainbow_lisp
+  autocmd!
+  autocmd FileType lisp,clojure,scheme RainbowParentheses
+augroup END

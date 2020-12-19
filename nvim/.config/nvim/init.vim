@@ -23,6 +23,7 @@ Plug 'psliwka/vim-smoothie'
 Plug 'itchyny/lightline.vim'
 
 " Text
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/vis'
@@ -41,7 +42,7 @@ Plug 'sheerun/vim-polyglot'
 
 " Lisps
 Plug 'vlime/vlime', {'rtp': 'vim/'}
-Plug 'kovisoft/paredit'
+"Plug 'kovisoft/paredit'
 
 " Haskell
 Plug 'pbrisbin/vim-syntax-shakespeare'

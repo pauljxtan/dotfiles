@@ -50,6 +50,16 @@
             "additionalSchemes": ["jar", "zipfile"],
             "trace.server": "verbose",
             "initializationOptions": {}
+        },
+        "ocaml-lsp": {
+            "command": "opam",
+            "args": ["config", "exec", "--", "ocamllsp"],
+            "filetypes": ["ocaml", "reason"]
+        },
+        "racket": {
+            "command": "racket",
+            "args": ["--lib", "racket-langserver"],
+            "filetypes": ["scheme"]
         }
     }
 }
