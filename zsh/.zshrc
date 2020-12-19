@@ -21,4 +21,8 @@ bindkey '^[[B' history-substring-search-down
 
 source $ZSH_EXTERNAL/z/z.sh
 
-if [ -e /home/paultan/.nix-profile/etc/profile.d/nix.sh ]; then . /home/paultan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
+
+# opam configuration
+test -r $HOME/.opam/opam-init/init.zsh && . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
