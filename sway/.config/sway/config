@@ -18,7 +18,7 @@ set $term env WINIT_UNIX_BACKEND=x11 alacritty
 # https://hg.sr.ht/~scoopta/wofi
 set $menu wofi --show run | xargs swaymsg exec --
 
-font pango:Iosevka Fixed 11
+font pango:Iosevka Fixed 9
 
 #### Outputs
 

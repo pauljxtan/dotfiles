@@ -44,7 +44,8 @@
     "network": {
         "interval": 5,
         "format": "[{ifname}] {bandwidthUpBits}  {bandwidthDownBits} ",
-        "format-disconnected": "(disconnected) ⚠"
+        "format-disconnected": "(disconnected) ⚠",
+        "interface": "enp9s0"
     },
     "disk": {
         "interval": 30,
