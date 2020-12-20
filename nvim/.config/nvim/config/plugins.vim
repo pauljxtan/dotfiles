@@ -151,3 +151,6 @@ augroup rainbow_lisp
   autocmd!
   autocmd FileType lisp,clojure,scheme RainbowParentheses
 augroup END
+
+"""" vim-slime
+let g:slime_target = "neovim"

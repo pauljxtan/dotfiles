@@ -43,6 +43,7 @@ Plug 'sheerun/vim-polyglot'
 " Lisps
 Plug 'vlime/vlime', {'rtp': 'vim/'}
 "Plug 'kovisoft/paredit'
+Plug 'jpalardy/vim-slime'
 
 " Haskell
 Plug 'pbrisbin/vim-syntax-shakespeare'

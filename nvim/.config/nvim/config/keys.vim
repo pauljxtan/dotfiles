@@ -30,3 +30,6 @@ endfunction
 noremap <F3> :call Fmt()<cr>
 
 nnoremap <leader>dt :execute 'edit ~/diary/' . strftime('%Y') . '/' . strftime('%Y-%m-%d') . '.md'<cr>
+
+" Leave terminal mode more easily
+tnoremap <Esc> <C-\><C-n>
