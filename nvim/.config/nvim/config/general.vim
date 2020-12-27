@@ -109,3 +109,7 @@ set history=100
 
 " Silence non-useful completion-related messages like 'Pattern not found'
 set shortmess+=c
+
+"""" fzf
+" https://github.com/junegunn/fzf/issues/1393#issuecomment-426576577
+autocmd! FileType fzf tnoremap <buffer> <esc> <c-c>
