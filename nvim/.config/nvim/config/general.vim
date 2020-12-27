@@ -60,7 +60,7 @@ set inccommand=split
 
 set foldenable
 
-set foldlevel=1
+set foldlevelstart=99
 set foldnestmax=99
 
 " 'indent' works more universally, but 'syntax' may be better for supported

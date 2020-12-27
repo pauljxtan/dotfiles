@@ -16,16 +16,15 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Navigation
-Plug 'psliwka/vim-smoothie'
-
 " Statusline
 Plug 'itchyny/lightline.vim'
 
 " Text
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'psliwka/vim-smoothie'
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
 Plug 'vim-scripts/vis'
 
 " coc replaces deoplete, neosnippet, etc. for IDE-like features
@@ -42,7 +41,7 @@ Plug 'sheerun/vim-polyglot'
 
 " Lisps
 Plug 'vlime/vlime', {'rtp': 'vim/'}
-"Plug 'kovisoft/paredit'
+Plug 'kovisoft/paredit'
 Plug 'jpalardy/vim-slime'
 
 " Haskell
