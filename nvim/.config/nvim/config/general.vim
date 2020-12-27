@@ -12,6 +12,9 @@ syntax on
 set encoding=utf8
 set fileformats=unix,dos,mac
 
+" Specific filetype overrides
+autocmd BufReadPost *.rkt,*.rktl set filetype=racket
+
 """" Whitespace
 
 set autoindent
