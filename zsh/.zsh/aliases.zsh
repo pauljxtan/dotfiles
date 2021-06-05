@@ -9,8 +9,8 @@ alias history='history -i'
 
 alias vi='nvim'
 alias vim='nvim'
-alias vz='nvim ~/.zsh'
-alias vv='nvim ~/.config/nvim'
+alias vz='cd ~/.zsh && nvim .'
+alias vv='cd ~/.config/nvim && nvim .'
 
 alias grimslurp='grim -g "$(slurp)"'
 alias grimslurpclip='grim -g "$(slurp)" - | wl-copy'

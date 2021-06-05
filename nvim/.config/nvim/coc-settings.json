@@ -21,7 +21,7 @@
             }
         },
         "elixirLS": {
-            "command": "/home/paultan/src/elixir-ls-0.4.0_precompiled/language_server.sh",
+            "command": "/home/paultan/src/elixir-ls-0.7.0/release/language_server.sh",
             "filetypes": ["elixir", "eelixir"]
         },
         "elmLS": {

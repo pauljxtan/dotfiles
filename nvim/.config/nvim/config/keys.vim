@@ -33,3 +33,5 @@ nnoremap <leader>dt :execute 'edit ~/diary/' . strftime('%Y') . '/' . strftime('
 
 " Leave terminal mode more easily
 tnoremap <Esc> <C-\><C-n>
+
+nnoremap <leader>zd :lcd ~/projects/misc/dotfiles_public<cr>

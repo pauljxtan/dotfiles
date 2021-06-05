@@ -32,7 +32,8 @@
     "clock": {
         "interval": 30,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d %H:%M}"
+        "format": "{:%Y-%m-%d %H:%M}",
+        "format-alt": "{:%H:%M}"
     },
     "cpu": {
         "format": "{usage}% ",
