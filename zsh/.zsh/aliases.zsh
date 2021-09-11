@@ -1,6 +1,6 @@
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -i'
+alias rm='trash -i'
 
 alias ls='exa --colour-scale'
 alias ncdu='ncdu --color dark -rr'
