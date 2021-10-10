@@ -145,11 +145,7 @@ bar {
     swaybar_command waybar
 }
 
-#for_window [class="^.*"] border pixel 1
 gaps inner 0
 
 include /etc/sway/config.d/*
 include config.local
-
-# NOTE redshift(-gtk) does not work in Wayland (as of July 2020)
-# Start it here if/when it is supported
