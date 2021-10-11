@@ -27,6 +27,12 @@ export XMODIFIERS=@im=fcitx
 # Make Java GUIs look less ugly
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 
+# https://github.com/swaywm/sway/wiki#issues-with-java-applications
+if [ "$XDG_SESSION_DESKTOP" = "sway" ] ; then
+    # https://github.com/swaywm/sway/issues/595
+    export _JAVA_AWT_WM_NONREPARENTING=1
+fi
+
 # Show hidden files to enable jumping to dotfiles and the like
 export FZF_DEFAULT_COMMAND="fd --type f --hidden"
 
