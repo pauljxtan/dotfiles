@@ -11,3 +11,6 @@ colorscheme sonokai
 "hi LineNr guibg=NONE ctermbg=NONE
 "hi Normal guibg=NONE ctermbg=NONE
 "hi SignColumn guibg=NONE ctermbg=NONE
+
+" Make window splits stand out more
+hi VertSplit guibg=bg guifg=fg
