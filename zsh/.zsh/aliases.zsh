@@ -4,6 +4,7 @@ alias rm='trash -i'
 
 alias ls='exa --colour-scale'
 alias ncdu='ncdu --color dark -rr'
+alias tree='tree -I "__pycache__|_build|deps"'
 
 alias history='history -i'
 
