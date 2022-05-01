@@ -38,8 +38,7 @@ bindsym Mod4+Mod1+Shift+l exec 'swaylock -f -c 000000'
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
 # https://www.mankier.com/7/wofi#Window_Switcher
-# (Note that mod+w is used by default for the tabbed layout, which I don't use)
-bindsym $mod+w exec ~/bin/wofi-win.sh
+#bindsym $mod+w exec ~/bin/wofi-win.sh
 
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
@@ -102,11 +101,8 @@ bindsym $mod+Control+Shift+0 move container to workspace 20
 bindsym $mod+b splith
 bindsym $mod+v splitv
 
-# The bindings for stacking and tabbed layouts are left as comments for
-# reference. I don't really ever use these layouts, so may as well free those
-# keys for other functions.
-#bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
 
 bindsym $mod+Shift+Up sticky toggle
 
