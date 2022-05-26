@@ -8,6 +8,7 @@ window:
   dynamic_padding: false
   decorations: full
   dynamic_title: true
+  opacity: 0.9
 
 scrolling:
   history: 10000
@@ -60,8 +61,6 @@ colors:
 
 bell:
   duration: 0
-
-background_opacity: 0.9
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
