@@ -23,7 +23,7 @@ font:
   italic:
     family: Iosevka Fixed
     style: Italic
-  size: 10
+  size: 12
   offset:
     x: 0
     y: 0
@@ -80,7 +80,7 @@ key_bindings:
   - { key: Insert,   mods: Shift,   action: PasteSelection   }
   - { key: Key0,     mods: Control, action: ResetFontSize    }
   - { key: Equals,   mods: Control, action: IncreaseFontSize }
-  - { key: Subtract, mods: Control, action: DecreaseFontSize }
+  - { key: Minus,    mods: Control, action: DecreaseFontSize }
 
   - { key: J, mods: Control|Shift, action: ScrollPageDown }
   - { key: K, mods: Control|Shift, action: ScrollPageUp   }
