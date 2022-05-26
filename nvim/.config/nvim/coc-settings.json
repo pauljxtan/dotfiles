@@ -60,6 +60,10 @@
             "command": "racket",
             "args": ["--lib", "racket-langserver"],
             "filetypes": ["scheme"]
+        },
+        "kotlin": {
+            "command": "~/src/kotlin/server/bin/kotlin-language-server",
+            "filetypes": ["kotlin"]
         }
     }
 }
