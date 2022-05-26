@@ -25,9 +25,6 @@ export XMODIFIERS=@im=fcitx
 # Don't need this for the current single-monitor setup, but kept for reference
 #export WINIT_HIDPI_FACTOR=1.0
 
-# Make Java GUIs look less ugly
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
-
 # https://github.com/swaywm/sway/wiki#issues-with-java-applications
 if [ "$XDG_SESSION_DESKTOP" = "sway" ] ; then
     # https://github.com/swaywm/sway/issues/595
