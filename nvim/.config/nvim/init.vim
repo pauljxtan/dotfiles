@@ -15,19 +15,14 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Filesystem
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'vim-ctrlspace/vim-ctrlspace'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
 
 " Text
-Plug 'junegunn/rainbow_parentheses.vim'
-Plug 'junegunn/vim-easy-align'
 Plug 'psliwka/vim-smoothie'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-surround'
-Plug 'vim-scripts/vis'
 
 " coc replaces deoplete, neosnippet, etc. for IDE-like features
 " https://github.com/neoclide/coc.nvim
@@ -75,7 +70,6 @@ Plug 'pauljxtan/neuron.vim'
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'rhysd/git-messenger.vim'
-Plug 'tpope/vim-fugitive'
 
 """" Colorschemes
 

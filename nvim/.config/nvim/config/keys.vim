@@ -17,21 +17,17 @@ noremap <Right> <NOP>
 noremap <PageUp> <NOP>
 noremap <PageDown> <NOP>
 
-" Run `make fmt` if available, otherwise just fix indentation
+" Run `make fmt` if available, or fall back to other formatters
 function Fmt()
     !make fmt
     if v:shell_error
-        normal gg=G
-    else
-        edit
+        if &filetype == "python"
+            !black %
+        endif
     endif
 endfunction
 
 noremap <F3> :call Fmt()<cr>
 
-nnoremap <leader>dt :execute 'edit ~/diary/' . strftime('%Y') . '/' . strftime('%Y-%m-%d') . '.md'<cr>
-
 " Leave terminal mode more easily
 tnoremap <Esc> <C-\><C-n>
-
-nnoremap <leader>zd :lcd ~/projects/misc/dotfiles_public<cr>

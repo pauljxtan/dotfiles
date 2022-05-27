@@ -85,14 +85,6 @@ nnoremap <leader>f :Files<cr>
 
 let g:fzf_preview_window = 'right:50%'
 
-"""" vim-easy-align
-
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
-
 """" lightline
 
 set noshowmode
@@ -155,6 +147,3 @@ augroup END
 
 """" vim-slime
 let g:slime_target = "neovim"
-
-"""" vim-ctrlspace
-let g:CtrlSpaceDefaultMappingKey = "<C-space> "
