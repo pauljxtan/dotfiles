@@ -8,6 +8,8 @@ export XDG_PICTURES_DIR=$HOME/Pictures
 export EDITOR=nvim
 export VISUAL=nvim
 
+export KOTLIN_PATH=~/src/kotlin/kotlin-compiler-1.6.21
+
 # Path
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.cargo/bin
@@ -15,7 +17,7 @@ export PATH=$PATH:$HOME/src/node-v12.18.1-linux-x64/bin
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/src/elixir/Precompiled_220507/bin
 export PATH=$PATH:~/.mix/escripts
-export PATH=$PATH:~/src/kotlin/kotlin-compiler-1.6.21/bin
+export PATH=$PATH:$KOTLIN_PATH/bin
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
