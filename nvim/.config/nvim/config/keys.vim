@@ -31,3 +31,5 @@ noremap <F3> :call Fmt()<cr>
 
 " Leave terminal mode more easily
 tnoremap <Esc> <C-\><C-n>
+" But also have a way to send <Esc> to other programs
+tnoremap <C-v><Esc> <Esc>
