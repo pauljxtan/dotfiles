@@ -1,8 +1,8 @@
 let mapleader = "\\"
 
 " Make it easier to change config
-nnoremap <leader>ev :vsplit $HOME/.config/nvim/init.vim<cr>
-nnoremap <leader>sv :source $HOME/.config/nvim/init.vim<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Preserve visual selection after an indent or dedent
 vnoremap < <gv
