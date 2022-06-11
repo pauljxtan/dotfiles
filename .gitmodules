@@ -10,3 +10,9 @@
 [submodule "zsh/.zsh/external/z"]
 	path = zsh/.zsh/external/z
 	url = git@github.com:rupa/z.git
+[submodule "tmux/.config/tmux/plugins/tpm"]
+	path = tmux/.config/tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm.git
+[submodule "tmux/.config/tmux/plugins/tmux-fzf"]
+	path = tmux/.config/tmux/plugins/tmux-fzf
+	url = git@github.com:sainnhe/tmux-fzf.git
