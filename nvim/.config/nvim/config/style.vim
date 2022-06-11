@@ -3,6 +3,7 @@ set background=dark
 
 let g:sonokai_transparent_background = 1
 let g:sonokai_enable_italic = 1
+let g:sonokai_style = 'shusia'
 colorscheme sonokai
 
 " Sometimes we need to override stuff for the entire window to be transparent
