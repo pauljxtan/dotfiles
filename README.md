@@ -23,6 +23,7 @@ to `$HOME/.config/alacritty/alacritty.yml`.
 - [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
 - [neovim](https://neovim.io/)
 - [sway](https://swaywm.org/)
+- [tmux](https://github.com/tmux/tmux)
 - [waybar](https://github.com/Alexays/Waybar)
 - [wofi](https://hg.sr.ht/~scoopta/wofi)
 - [zsh](https://www.zsh.org/)
