@@ -70,7 +70,7 @@ mouse_bindings:
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 cursor:
   style: Block
