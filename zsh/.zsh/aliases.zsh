@@ -18,3 +18,7 @@ alias grimslurpclip='grim -g "$(slurp)" - | wl-copy'
 
 # https://docs.racket-lang.org/rash
 alias rash='racket -l rash/repl'
+
+# Run mpv with minimal opts for SVP
+# https://www.svp-team.com/wiki/SVP:mpv
+alias mpvforsvp='mpv --no-config --input-ipc-server=/tmp/mpvsocket --hwdec=copy-auto'
