@@ -3,3 +3,6 @@
 
 # sway
 config.local
+
+# mpv
+watch_later/
