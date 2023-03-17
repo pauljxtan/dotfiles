@@ -43,6 +43,8 @@ bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher and window switcher)
 bindsym $mod+d exec --no-startup-id rofi -show combi
+# Alternative version for faster window switching
+bindsym $mod+Tab exec --no-startup-id ~/bin/rofi-win
 
 # change focus
 bindsym $mod+$left focus left
