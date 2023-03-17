@@ -19,15 +19,21 @@ to `$HOME/.config/alacritty/alacritty.yml`.
 ## Stuff configured
 
 - [alacritty](https://github.com/alacritty/alacritty)
+- [i3](https://i3wm.org)
 - [mpv](https://mpv.io/)
 - [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
 - [neovim](https://neovim.io/)
+- [polybar](https://polybar.github.io/)
 - [sway](https://swaywm.org/)
 - [tmux](https://github.com/tmux/tmux)
 - [waybar](https://github.com/Alexays/Waybar)
 - [wofi](https://hg.sr.ht/~scoopta/wofi)
 - [zsh](https://www.zsh.org/)
   - Submodules for third-party plugins are in `zsh/.zsh/external`
+
+The `bin/` dir contains miscellaneous small scripts that aren't exactly
+dotfiles but are convenient to have around (and that some configs rely on).
+They can be stowed in the same way with `stow -t $HOME bin`.
 
 ---
 
