@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# "Alt-tab" type behaviour for window switching with rofi
+# https://github.com/davatorium/rofi/issues/38#issuecomment-456988468
+
+xdotool search --sync --syncsleep 50 --limit 1 --class Rofi keyup --delay 0 \
+    Tab key --delay 0 Tab keyup --delay 0 Super_L keydown --delay 0 Super_L&
+
+rofi -show window -kb-accept-entry "!Super-Tab" -kb-row-down "Super+Tab"
