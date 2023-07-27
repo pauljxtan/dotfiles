@@ -37,8 +37,9 @@ fi
 export FZF_DEFAULT_COMMAND="fd --type f --hidden"
 
 # Qt5 theming
+# Prefer to set within the specific application, but leaving for reference
 #export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_STYLE_OVERRIDE=kvantum
+#export QT_STYLE_OVERRIDE=kvantum
 
 # Added by ghcup
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
