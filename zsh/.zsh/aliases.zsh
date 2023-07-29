@@ -24,5 +24,3 @@ alias rash='racket -l rash/repl'
 alias mpvforsvp='mpv --no-config --input-ipc-server=/tmp/mpvsocket \
 --hwdec=vaapi-copy --hwdec-codecs=all --hr-seek-framedrop=no \
 --no-resume-playback --opengl-early-flush=no'
-
-alias firefox=/var/lib/flatpak/exports/bin/org.mozilla.firefox
