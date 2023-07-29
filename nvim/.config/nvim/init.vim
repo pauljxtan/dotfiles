@@ -28,8 +28,6 @@ Plug 'tpope/vim-eunuch'
 " https://github.com/neoclide/coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'kassio/neoterm'
-
 """" Filetype plugins
 
 " For convenience, delegate as much as possible to vim-polyglot
