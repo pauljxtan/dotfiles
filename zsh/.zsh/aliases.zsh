@@ -23,4 +23,5 @@ alias rash='racket -l rash/repl'
 # https://www.svp-team.com/wiki/SVP:mpv
 alias mpvforsvp='mpv --no-config --input-ipc-server=/tmp/mpvsocket \
 --hwdec=vaapi-copy --hwdec-codecs=all --hr-seek-framedrop=no \
+--video-sync=display-resample \
 --no-resume-playback --opengl-early-flush=no'
